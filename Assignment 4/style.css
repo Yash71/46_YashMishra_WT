@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    #b8cbb8 0%,
+    #b8cbb8 0%,
+    #b465da 0%,
+    #cf6cc9 33%,
+    #ee609c 66%,
+    #ee609c 100%
+  );
+}
+.registration-form {
+  height: 500px;
+  width: 400px;
+  background: white;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.registration-form h1 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.registration-form > div {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;  
+}
+.registration-form input {
+  /* margin-right: 2rem; */
+  width: 90%;
+  height: 2rem;
+  padding: 0.5em;
+  border: 2px solid black;
+  
+}
+.registration-form div > label {
+  font-weight: 700;
+  
+}
+.registration-form input{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.registration-form #logger-course{
+    margin-left: 0.5rem;
+}
+.registration-form input:focus {
+  outline: none;
+  border-color: #cf6cc9;
+}
+.registration-form div:nth-child(4){
+    margin-bottom: 2rem;
+}
+.registration-form select{
+    width: 70%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.registration-form button{
+    margin-top: 2rem;
+    
+    padding: 1rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    background: hsl(305, 60%, 65%);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+.registration-form button:hover{
+    background: hsl(305, 55%, 72%);
+    color: rgb(59, 53, 53);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
