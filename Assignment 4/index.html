@@ -5,41 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Calculator</title>
   </head>
   <body>
-    <div class="registration-form">
-      <h1>Registration Form</h1>
-      <div>
-        <label for="first-name">First Name</label>
-        <div>
-          <input type="text" name="first-name" id="first-name" />
+    <div class="container">
+      <div class="calc-body">
+        <div class="calc-screen">
+          <div class="calc-operation">2536 + 419 +</div>
+          <div class="calc-typed">2955<span class="blink-me">_</span></div>
         </div>
-      </div>
-      <div>
-        <label for="last-name">Last Name</label>
-        <div></div>
-        <input type="text" name="last-name" id="last-name" />
-      </div>
-      <div>
-        <label for="logger-email">Email</label>
-        <div>
-          <input type="text" name="logger-email" id="logger-email" />
-        </div>
-      </div>
-      <div>
-        <label for="Course">Course</label>
-        <select name="logger-course" id="logger-course">
-          <div>
-            <option value="Computer">Computer Engineeering</option>
-            <option value="EnTC">EnTC Computer Engineering</option>
-            <option value="Civil">Civil Engineering</option>
-            <option value="Mechanical">Mechanical Engineering</option>
+        <div class="calc-buttons">
+          <div class="calc-button-row">
+            <div class="button c upper-row">C</div>
+            <div class="button l upper-row"><</div>
+            <div class="button l upper-row">%</div>
+            <div class="button l upper-row">/</div>
           </div>
-        </select>
-      </div>
-      <div>
-        <button type="submit" id="submit-button">Submit</button>
+          <div class="calc-button-row">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button l">x</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button l">−</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button l">+</div>
+          </div>
+          <div class="calc-button-row">
+            <div class="button">00</div>
+            <div class="button">0</div>
+            <div class="button">.</div>
+            <div class="button l">=</div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>
