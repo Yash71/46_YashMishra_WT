@@ -18,7 +18,7 @@ public class servlet extends HttpServlet {
         try ( PrintWriter out = response.getWriter()) {
             
             Class.forName("com.mysql.jdbc.Driver");
-            con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost/wt","root","Nitesh@84876");
+            con = (Connection)DriverManager.getConnection("jdbc:mysql://localhost/wt","root","");
             stmt = con.createStatement();
             rs = stmt.executeQuery("select * from ebookshop;");
             
