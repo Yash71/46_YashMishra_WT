@@ -15,8 +15,8 @@ if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['emai
 // Username doesn't exists, insert new account
 if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email) VALUES (?, ?, ?)')) {
 	// We do not want to expose passwords in our database, so hash the password and use password_verify when a user logs in.
-	$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-	$stmt->bind_param('sss', $_POST['username'], $password, $_POST['email']);
+	// $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+	$stmt->bind_param('sss', $_POST['username'], $_POST['password'], $_POST['email']);
 	$stmt->execute();
 	echo 'You have successfully registered! You can now login!';
 } else {
